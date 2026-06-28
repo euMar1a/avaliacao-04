@@ -1,0 +1,102 @@
+@import url('../css/navbar.css');
+@import url('../css/home.css');
+@import url('../css/trending.css');
+@import url('../css/about.css');
+@import url('../css/products.css');
+@import url('../css/footer.css');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Unbounded", sans-serif;
+}
+:root
+{
+    --off-white: #f6f8ee;
+    --ultra-light-musg: #eef6c5;
+    --light-musg: #bcc97a;
+    --medium-musg: #abc370;
+    --all-musg: #95aa61;
+    --musg: #899752;
+    --dark-musg: #576329;
+    --real-black: #121310;
+}
+body
+{  
+    background-color: var(--ultra-light-musg);
+}
+.title
+{
+    font-size: 2.5rem;
+    color: var(--real-black);
+    font-weight: 600;
+    position: relative;
+
+    &::before
+    {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 4px;
+        background-color: var(--dark-musg);
+        position: absolute;
+        bottom: 0;
+        border-radius: 30px;
+    }
+}
+a.btn
+{
+    text-decoration: none;
+}
+.btn
+{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+.btn-mobile
+{
+    font-size: 1.5rem;
+}
+.btn-default 
+{
+    padding: 10px 20px;
+    border: 2px solid var(--dark-musg);
+    color: var(--dark-musg);
+
+    &:hover
+    {
+        border: 2px solid var(--medium-musg);
+        color: var(--medium-musg);
+    }
+}
+.btn-actions
+{
+    padding: 10px 20px;
+    background-color: var(--musg);
+    color: var(--ultra-light-musg);
+
+    &:hover
+    {
+        background-color: var(--medium-musg);
+        color: var(--dark-musg);
+    }
+}
+.btn-outlined
+{
+    background-color: transparent;
+    color: var(--dark-musg);
+    border: 2px solid var(--dark-musg);
+
+    &:hover
+    {
+        background-color: var(--dark-musg);
+        color: var(--ultra-light-musg);
+    }
+}
